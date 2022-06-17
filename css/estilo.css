@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+
+/* ----------Formato TEXTOS y LINKS------------ */
+
+h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 h3 {
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+label,
+::placeholder {
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/*-------  FORMATO HEADER  --------*/
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logoNav {
+    padding-left: 5rem;
+}
+
+nav {
+    padding-right: 5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-weight: 700%;
+    color: grey;
+}
+
+
+/*-------  FORMATO FOOTER  --------*/
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.footer a img {
+    margin: 0.8rem 0.5rem;
+}
+
+
+/*-------  FORMATO INDEX HTML --------*/
+
+.portada {
+    background-image: url(../images/portada.png);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-right: 15rem;
+}
+
+#contacto {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25%;
+
+
+}
+
+.formulario {
+    background-color: bisque;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 0 2rem 2rem;
+}
+
+/*-------  FORMATO NOSOTROS HTML --------*/
+.portadaNosotros {
+    background-image: url(../images/portada-nosotros.png);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.michiCafe {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.imagenNosotros {
+    padding-left: 8rem;
+}
+
+.conocenos {
+    width: 45%;
+    margin-left: 15rem;
+    padding-left: 5rem;
+}
+
+.conocenos h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.conocenos p {
+    padding-bottom: 2rem;
+}
+
+
+/*-------  FORMATO MENU HTML ------------*/
+.portadaMenu {
+    background-image: url(../images/header-menu.jpg);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.dulce,
+.salado,
+.cafeteria,
+.bebidas {
+    display: flex;
+    justify-content: center;
+    /* padding: 5rem 0; */
+    margin: 5rem 0;
+}
+
+/*-------  FORMATO SUCURSALES HTML --------*/
+
+.portadaSucursales {
+    background-image: url(../images/portada-sucursales.png);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subtituloLocales {
+    text-align: center;
+}
+
+.cardLocales {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 2%; 
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.contenedor {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+/*-------  FORMATO RESERVA HTML --------*/
+
+.portadaReserva {
+    background-image: url(../images/portada-reserva.png);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.reserva {
+    width: 50%;
+}
+
+.formReserva {
+    padding: 3rem 0; 
+}
+
+
+/*-----------GRID-------------*/
+
+/* ------- index ------- */
+.gridIndex {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header"
+        "portada portada"
+        "imagen nosotros"
+        "contacto formulario"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.portada {
+    grid-area: portada;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+#contacto {
+    grid-area: contacto;
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* ------- menu ------- */
+
+.gridMenu {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "header header"
+        "portadaMenu portadaMenu"
+        "textMenu textMenu"
+        "dulce salado"
+        "cafeteria bebidas"
+        "footer footer";
+}
+
+.portadaMenu {
+    grid-area: portadaMenu;
+}
+
+.textMenu {
+    grid-area: textMenu;
+}
+
+.dulce {
+    grid-area: dulce;
+}
+
+.salado {
+    grid-area: salado;
+}
+
+.cafeteria {
+    grid-area: cafeteria;
+}
+
+.bebidas {
+    grid-area: bebidas;
+}
+
+
+/*-------- MEDIA QUERIES ---------*/
+
+@media screen and (max-width: 768px) {
+
+    /*INDEX*/
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "header"
+            "portada"
+            "imagen"
+            "nosotros"
+            "contacto"
+            "formulario"
+            "footer";
+    }
+
+    .nosotros {
+        justify-content: center;
+        padding: 0 4rem 2rem 4rem;
+        text-align: center;
+    }
+
+    #contacto {
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .formulario {
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    /*MENU*/
+    .gridMenu {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+            "header"
+            "portadaMenu"
+            "textMenu"
+            "dulce"
+            "salado"
+            "cafeteria"
+            "bebidas"
+            "footer";
+    }
+
+    .textMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*ESTO ES PROVISORIO, DESPUÉS PONÉ UN MENÚ HAMBURGUESA CON BOOTSTRAP */
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    /*MENU*/
+    .gridMenu {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+            "header"
+            "portadaMenu"
+            "textMenu"
+            "dulce"
+            "salado"
+            "cafeteria"
+            "bebidas"
+            "footer";
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .textMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dulce, .salado, .cafeteria, .bebidas {
+        padding: 5rem 0;
+        margin: 0;
+}
+}

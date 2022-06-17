@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi Café | Reserva</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/1654565627.ico">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <!--      HEADER      -->
+    <header class="header">
+        <div class="logoNav">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo de Michi Café">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="portadaReserva">
+        <h1>RESERVACIONES</h1>
+    </div>
+
+
+    <!--      CONTENIDO     -->
+    <div class="contenido">
+        <div class="reserva">
+            <h3>Informacion importante</h3>
+            <p>Para realizar la reserva puede hacerlo completando el formulario. Las reservas solo se registran por este
+                medio.</p>
+            <p> La reserva debe ser realizada con un margen de 2 horas de anticipación y la tolerancia es de 15 minutos.
+            </p>
+
+            <h3>Protocolo COVID-19</h3>
+            <p>Nuestro personal le tomará la temperatura al ingresar y le solicitaremos que se higienice las manos con
+                alcohol desinfectante.</p>
+            <p>El menú estará disponible de manera digital.</p>
+        </div>
+
+        <div class="formReserva">
+            <form action="" method="post">
+                <label for="full-name">Nombre y Apellido</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Nombre y apellido"><br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono"><br>
+
+                <label for="local">Local</label>
+                <select name="local" id="local">
+                    <option value="almagro">Almagro</option>
+                    <option value="belgrano">Belgrano</option>
+                    <option value="palermo">Palermo</option>
+                </select><br>
+
+                <label for="fecha-horario">Elegí el día y horario</label>
+                <input type="datetime-local" name="fecha-horario" id="fecha-horario"><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejá tu mensaje"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </form>
+        </div>
+    </div>
+
+    <!--     FOOTER     -->
+    <footer class="footer">
+        <p>Seguinos en nuestras redes</p>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="../images/instagram.png" alt="Link a instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../images/facebook.png" alt="Link a facebook">
+        </a>
+    </footer>
+
+
+</body>
+
+</html>
