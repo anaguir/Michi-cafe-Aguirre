@@ -101,6 +101,11 @@ nav ul li a:hover {
     margin-right: 0.5rem;
 }
 
+.footer a:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
 .footer a img {
     margin: 0.8rem 0.5rem;
 }
