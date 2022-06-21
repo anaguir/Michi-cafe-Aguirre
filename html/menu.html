@@ -7,68 +7,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michi Café | Menú</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/1654565627.ico">
-    <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- MODIFICACIONES CON MI CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <div class="gridMenu">
+    
+    <!-- NAV -->
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Logo de Michi Café">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
 
-        <header class="header">
-            <div class="logoNav">
-                <a href="../index.html">
-                    <img src="../images/logo.png" alt="Logo de Michi Café">
-                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PORTADA -->
+    <div class="portada text-center portadaMenu">
+        <h1>MENÚ</h1>
+        <p><span>tentate con nuestro menú</span></p>
+    </div>
+
+
+    <!--      CONTENIDO     -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="textMenu col-12 text-center">
+                <p>En Michi Café te ofrecemos distintas opciones para que puedas disfrutar ... </p>
             </div>
 
-            <nav>
-                <ul>
-                    <li> <a href="../index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="menu.html">Menú</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="reserva.html">Reserva</a></li>
-                    <li><a href="../index.html#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="dulce col-md-6 col-lg-3">
+                <img src="../images/dulce.png" alt="Imagen menú dulce" class="ancho">
+            </div>
 
-        <div class="portadaMenu">
-            <h1>TENTATE CON NUESTRO MENÚ</h1>
+            <div class="salado col-md-6 col-lg-3">
+                <img src="../images/salado.png" alt="Imagen menú salado" class="ancho">
+            </div>
+
+            <div class="cafeteria col-md-6 col-lg-3">
+                <img src="../images/cafeteria.png" alt="Imagen menú cafeteria" class="ancho">
+            </div>
+
+            <div class="bebidas col-md-6 col-lg-3">
+                <img src="../images/bebidas.png" alt="Imagen menú bebidas" class="ancho">
+            </div>
         </div>
-
-        <div class="textMenu">
-            <h2>Menú</h2>
-            <p>En Michi Café te ofrecemos distintas opciones para que puedas disfrutar ... </p>
-        </div>
-
-        <div class="dulce">
-            <img src="../images/dulce.png" alt="Imagen menú dulce">
-        </div>
-
-        <div class="salado">
-            <img src="../images/salado.png" alt="Imagen menú salado">
-        </div>
-
-        <div class="cafeteria">
-            <img src="../images/cafeteria.png" alt="Imagen menú cafeteria">
-        </div>
-
-        <div class="bebidas">
-            <img src="../images/bebidas.png" alt="Imagen menú bebidas">
-        </div>
-
-
-
-        <footer class="footer">
-            <p>Seguinos en nuestras redes</p>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../images/instagram.png" alt="Link a instagram">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../images/facebook.png" alt="Link a facebook">
-            </a>
-        </footer>
     </div>
+
+
+    <!--     FOOTER     -->
+    <footer class="footer">
+        <p>Seguinos en nuestras redes</p>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="../images/instagram.png" alt="Link a instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../images/facebook.png" alt="Link a facebook">
+        </a>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -7,39 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michi Café</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/1654565627.ico">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- MODIFICACIONES CON MI CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
 <body>
+
+    <!-- CONTENEDOR GRID -->
     <div class="gridIndex">
 
-        <header class="header">
-            <div class="logoNav">
-                <a href="index.html">
+        <!-- NAV -->
+        <nav class="nav navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo.png" alt="Logo de Michi Café">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-    
-            <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
-                    <li><a href="html/menu.html">Menú</a></li>
-                    <li><a href="html/sucursales.html">Sucursales</a></li>
-                    <li><a href="html/reserva.html">Reserva</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        </nav>
 
 
-        <div class="portada">
+        <!-- PORTADA -->
+        <div class="portada text-center portadaIndex">
             <h1>MICHI CAFÉ</h1>
+            <p><span>un lugar para los amantes de los gatos y el café</span></p>
         </div>
 
-        <div class="imagen">
-            <img src="images/gato.png" alt="gato en una cafeteria">
+
+        <!-- CONTENIDO -->
+        <div class="imagenIndex">
+            <img src="images/gato.png" alt="gato">
         </div>
 
         <div class="nosotros">
@@ -48,8 +78,8 @@
                 maiores nisi deleniti quasi distinctio! Aliquid iure neque fugit aliquam, excepturi explicabo libero
                 molestias assumenda?</p>
 
-            <!-- ESTO ARREGLALO CON BOOTSTRAP (al igual que los botones del formulario)  
-            <button> <a href="">Ver más</a></button> -->
+            <a href="html/nosotros.html" class="boton">Ver más</a>
+
         </div>
 
         <div id="contacto">
@@ -59,23 +89,37 @@
         </div>
 
         <div class="formulario">
-            <form action="">
 
-                <label for="nombre-apellido">Nombre y apellido</label>
-                <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido">
-                <br>
+            <form class="row" action="">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com"> <br>
+                <div class="mb-3 col-lg-7">
+                    <label for="full-name" class="form-label">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="full-name" placeholder="Nombre y apellido">
+                </div>
 
-                <label for="mensaje">Comentario</label><br>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejá tu comentario"></textarea><br>
-                <input class="btn" type="submit" value="Enviar">
-                <input class="btn" type="reset" value="Cancelar">
+                <div class="mb-3 col-lg-7">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="mb-3 col-lg-7">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Dejá tu comentario"></textarea>
+                </div>
+
+                <div class="col-6">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn">Cancelar</button>
+
+                </div>
 
             </form>
+
         </div>
 
+
+        <!--     FOOTER     -->
         <footer class="footer">
             <p>Seguinos en nuestras redes</p>
             <a href="https://www.instagram.com/" target="_blank">
@@ -87,6 +131,13 @@
         </footer>
 
     </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

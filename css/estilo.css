@@ -1,40 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: "poppins", sans-serif;
-}
-
-
-/* ----------Formato TEXTOS y LINKS------------ */
-
-h1 {
-    font-weight: 500;
-    font-size: 4rem;
-    text-align: center;
-}
-
-h2 h3 {
-    font-weight: 400;
-}
-
-h2 {
-    font-size: 2.2rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    font-weight: 300;
-    font-size: 1.8rem;
+    font-family: 'poppins', sans-serif;
 }
 
 a {
@@ -43,49 +11,68 @@ a {
 
 label,
 ::placeholder {
-    font-family: "poppins", sans-serif;
+    font-family: 'poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+h2 h3 p{
+    font-weight: 500;
+}
+
+h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.4rem;
+}
 
-/*-------  FORMATO HEADER  --------*/
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
 
-.header {
-    background-color: black;
+
+/*-------  FORMATO NAV  --------*/
+
+.nav-link {
+    font-family: 'poppins', sans-serif;
+    color: white;
+    margin: 0 5px;
+
+}
+
+.nav-link:hover {
+    color: rgba(255, 166, 0, 0.801);
+}
+
+/*-------  FORMATO PORTADA  --------*/
+
+.portada {
+    height: 50vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.logoNav {
-    padding-left: 5rem;
-}
-
-nav {
-    padding-right: 5rem;
-}
-
-nav ul {
-    list-style: none;
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    font-size: 1.8rem;
+    flex-direction: column;
+    justify-content: center;
     color: white;
 }
 
-nav ul li a:hover {
-    font-weight: 700%;
-    color: grey;
+.portada h1 {
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 3rem;
 }
 
+.portada p {
+    font-family: 'poppins';
+}
+
+p span {
+    font-family: 'poppins';
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 0 1em;
+}
 
 /*-------  FORMATO FOOTER  --------*/
 
@@ -98,7 +85,11 @@ nav ul li a:hover {
 
 .footer p {
     color: white;
-    margin-right: 0.5rem;
+    margin: 0.5rem 0.1rem;
+}
+
+.footer p:hover {
+    color: gray; 
 }
 
 .footer a:hover {
@@ -107,365 +98,317 @@ nav ul li a:hover {
 }
 
 .footer a img {
-    margin: 0.8rem 0.5rem;
-}
+    margin: 0.5rem 0.2rem;
+} 
 
 
 /*-------  FORMATO INDEX HTML --------*/
 
-.portada {
-    background-image: url(../images/portada.png);
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portadaIndex {
+    background-image: url(../images/index.png);
 }
 
-.imagen {
+.imagenIndex {
     display: flex;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.imagenIndex img {
+    width: 80%;
 }
 
 .nosotros {
     display: flex;
-    justify-content: flex-start;
+    text-align: center;
     flex-direction: column;
-    padding-top: 8rem;
-    padding-right: 15rem;
+    padding: 4rem;
+    justify-content: center;
+}
+
+.boton {
+    width: 5.5rem;
+    padding: 0.2rem;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.801);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    display: inline-block;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boton:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    background-color: rgba(255, 166, 0, 0.801);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-style: none;
 }
 
 #contacto {
     background-color: bisque;
     display: flex;
-    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    padding-left: 25%;
-
-
+    padding: 3rem;
 }
 
 .formulario {
     background-color: bisque;
     display: flex;
-    justify-content: flex-start;
-    padding: 3% 0 2rem 2rem;
-}
-
-/*-------  FORMATO NOSOTROS HTML --------*/
-.portadaNosotros {
-    background-image: url(../images/portada-nosotros.png);
-    height: 50vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.michiCafe {
-    display: flex;
-    flex-direction: row;
     padding: 3rem;
 }
 
+
+/*-------  FORMATO NOSOTROS HTML --------*/
+
+.portadaNosotros {
+    background-image: url(../images/nosotros.jpg);
+}
+
 .imagenNosotros {
-    padding-left: 8rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.imagenNosotros img {
+    width: 80%;
 }
 
 .conocenos {
-    width: 45%;
-    margin-left: 15rem;
-    padding-left: 5rem;
-}
-
-.conocenos h2 {
-    padding-bottom: 2rem;
-    text-align: center;
-}
-
-.conocenos p {
-    padding-bottom: 2rem;
-}
-
-
-/*-------  FORMATO MENU HTML ------------*/
-.portadaMenu {
-    background-image: url(../images/header-menu.jpg);
-    height: 50vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: start;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+
+/*-------  FORMATO MENU HTML --------*/
+
+.portadaMenu {
+    background-image: url(../images/menu.jpg);
 }
 
 .textMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
+    margin-top: 2em;
 }
 
-.dulce,
-.salado,
-.cafeteria,
-.bebidas {
+.dulce, .salado, .cafeteria, .bebidas {
     display: flex;
     justify-content: center;
-    /* padding: 5rem 0; */
-    margin: 5rem 0;
+    padding: 2em;
+}
+
+.ancho {
+    width: 80%;
 }
 
 /*-------  FORMATO SUCURSALES HTML --------*/
 
 .portadaSucursales {
-    background-image: url(../images/portada-sucursales.png);
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../images/sucursales.jpg);
 }
 
-
-.subtituloLocales {
-    text-align: center;
-}
-
-.cardLocales {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.cardSucursal {
+    justify-content: space-around;
+    margin: 2rem 0;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 30%;
-    margin: 2%; 
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cardImg {
-    width: 100%;
-}
-
-.contenedor {
-    padding: 2px 16px;
-    text-align: center;
+    width: 23rem;
+    margin: 3rem;
+    padding: 0;
 }
 
 /*-------  FORMATO RESERVA HTML --------*/
 
 .portadaReserva {
-    background-image: url(../images/portada-reserva.png);
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenido {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 5rem;
+    background-image: url(../images/reserva.png);
 }
 
 .reserva {
-    width: 50%;
+    padding: 2em 1.5em 0 1.5em;
 }
 
 .formReserva {
-    padding: 3rem 0; 
+    padding: 0 1.5em 2em 1.5em;
 }
 
 
-/*-----------GRID-------------*/
+/*-----------MEDIA QUERIES-------------*/
 
-/* ------- index ------- */
-.gridIndex {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-        "header header"
-        "portada portada"
-        "imagen nosotros"
-        "contacto formulario"
-        "footer footer";
-}
+@media screen and (min-width: 576) {
 
-.header {
-    grid-area: header;
-}
-
-.portada {
-    grid-area: portada;
-}
-
-.imagen {
-    grid-area: imagen;
-}
-
-.nosotros {
-    grid-area: nosotros;
-}
-
-#contacto {
-    grid-area: contacto;
-}
-
-.formulario {
-    grid-area: formulario;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-/* ------- menu ------- */
-
-.gridMenu {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-        "header header"
-        "portadaMenu portadaMenu"
-        "textMenu textMenu"
-        "dulce salado"
-        "cafeteria bebidas"
-        "footer footer";
-}
-
-.portadaMenu {
-    grid-area: portadaMenu;
-}
-
-.textMenu {
-    grid-area: textMenu;
-}
-
-.dulce {
-    grid-area: dulce;
-}
-
-.salado {
-    grid-area: salado;
-}
-
-.cafeteria {
-    grid-area: cafeteria;
-}
-
-.bebidas {
-    grid-area: bebidas;
+    /* ----nosotros html---- */
+    .imagenNosotros img {
+        width: 40%;
+    }
 }
 
 
-/*-------- MEDIA QUERIES ---------*/
+@media screen and (min-width: 768px) {
 
-@media screen and (max-width: 768px) {
-
-    /*INDEX*/
+    /* ----index---- */
     .gridIndex {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, auto);
-        grid-template-areas:
-            "header"
-            "portada"
-            "imagen"
-            "nosotros"
-            "contacto"
-            "formulario"
-            "footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "nav nav"
+        "portadaIndex portadaIndex"
+        "imagenIndex imagenIndex"
+        "nosotros nosotros"
+        "contacto formulario"
+        "footer footer";
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .portadaIndex {
+        grid-area: portadaIndex;
+    }
+    
+    .imagenIndex {
+        grid-area: imagenIndex;
+    }
+    
+    .imagenIndex img {
+        width: 60%;
     }
 
     .nosotros {
-        justify-content: center;
-        padding: 0 4rem 2rem 4rem;
-        text-align: center;
+        grid-area: nosotros;
     }
-
+    
     #contacto {
-        justify-content: center;
-        text-align: center;
-        padding: 0;
-        margin: 0;
+        grid-area: contacto;
+        text-align: left;
+        padding: 1rem;
     }
-
+    
     .formulario {
-        justify-content: center;
-        text-align: center;
-        padding: 2rem 0;
-        margin: 0;
+        grid-area: formulario;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    
+    .footer {
+        grid-area: footer;
     }
 
-    /*MENU*/
-    .gridMenu {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, auto);
-        grid-template-areas:
-            "header"
-            "portadaMenu"
-            "textMenu"
-            "dulce"
-            "salado"
-            "cafeteria"
-            "bebidas"
-            "footer";
-    }
 
-    .textMenu {
-        display: flex;
-        flex-direction: column;
+    /* ----nosotros html---- */
+    .imagenNosotros img {
+        width: 50%;
+    }
+   
+    /* ----reserva html---- */
+    .reserva {
         text-align: center;
     }
-
-    /*ESTO ES PROVISORIO, DESPUÉS PONÉ UN MENÚ HAMBURGUESA CON BOOTSTRAP */
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
-
 }
 
 
+@media screen and (min-width: 992px) {
 
-@media screen and (max-width: 480px) {
-    /*MENU*/
-    .gridMenu {
-        height: 100vh;
+    /* ----index html---- */
+    .gridIndex {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, auto);
-        grid-template-areas:
-            "header"
-            "portadaMenu"
-            "textMenu"
-            "dulce"
-            "salado"
-            "cafeteria"
-            "bebidas"
-            "footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "nav nav"
+        "portadaIndex portadaIndex"
+        "imagenIndex nosotros"
+        "contacto formulario"
+        "footer footer";
     }
 
-    h1 {
-        font-size: 3rem;
+    .nav {
+        grid-area: nav;
     }
 
-    .textMenu {
+    .portadaIndex {
+        grid-area: portadaIndex;
+    }
+    
+    .imagenIndex {
+        grid-area: imagenIndex;
+        justify-content: flex-start;
+        padding: 3rem 0 3rem 5rem;
+    }
+    
+    .imagenIndex img {
+        width: 90%;
+    }
+
+    .nosotros {
+        grid-area: nosotros;
         display: flex;
-        flex-direction: column;
-        text-align: center;
+        text-align: start;
+        width: 80%;
     }
 
-    .dulce, .salado, .cafeteria, .bebidas {
-        padding: 5rem 0;
-        margin: 0;
-}
+    .boton {
+        text-align: center;
+        position: initial;
+        margin-left: 3rem;
+    }
+    
+    #contacto {
+        grid-area: contacto;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .formulario {
+        grid-area: formulario;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+
+
+    /* ----nosotros html---- */
+    .imagenNosotros img {
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+
+    /* ----menu html---- */
+    .ancho {
+        width: 85%;
+        padding: 0;
+    }
+
+    /* ----reserva html---- */
+
+     .reserva {
+        text-align: start;
+        align-items: flex-start;
+        padding-top: 4em;
+    }
+
+    .formReserva {
+        padding-top: 2em;
+    }
 }
