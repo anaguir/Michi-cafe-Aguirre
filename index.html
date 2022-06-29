@@ -19,118 +19,120 @@
 
 <body>
 
-    <!-- CONTENEDOR GRID -->
-    <div class="gridIndex">
+    <!-- NAV -->
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo de Michi Café">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/reserva.html">Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
 
-        <!-- NAV -->
-        <nav class="nav navbar navbar-expand-lg navbar-dark bg-black">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Logo de Michi Café">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/menu.html">Menú</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/sucursales.html">Sucursales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/reserva.html">Reserva</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-
-                </div>
             </div>
-        </nav>
-
-
-        <!-- PORTADA -->
-        <div class="portada text-center portadaIndex">
-            <h1>MICHI CAFÉ</h1>
-            <p><span>un lugar para los amantes de los gatos y el café</span></p>
         </div>
+    </nav>
+
+    <!-- PORTADA -->
+    <div class="portada text-center portadaIndex">
+        <h1>MICHI CAFÉ</h1>
+        <p><span>un lugar para los amantes de los gatos y el café</span></p>
+    </div>
 
 
-        <!-- CONTENIDO -->
-        <div class="imagenIndex">
-            <img src="images/gato.png" alt="gato">
+    <!--      CONTENIDO     -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="imagenNosotros col-lg-4">
+                <img src="images/gato.png" alt="gato">
+            </div>
+
+            <div class="nosotros col-lg-7 ">
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolores libero hic ad ut, eum
+                    rem. Sequi incidunt ipsa beatae dicta, sapiente pariatur atque laborum minima eum cumque
+                    exercitationem quae.</p>
+                <a href="html/nosotros.html" class="boton">Ver más</a>
+            </div>
+
+
+            <div id="contacto" class="col-lg-5 fondo">
+                <h2>Contacto</h2>
+                <p>Nos interesa saber tu opinión.</p>
+                <p>Dejanos tu comentario</p>
+            </div>
+
+
+            <div class="formulario col-lg-6 fondo">
+                <form action="" method="post">
+
+                    <div class="mb-3">
+                        <label for="full-name" class="form-label">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="full-name" placeholder="Nombre y apellido">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="ejemplo@gmail.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Dejá tu comentario"></textarea>
+                    </div>
+
+                    <div class="col-6">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Cancelar</button>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-lg-1 fondo"></div>
+
         </div>
-
-        <div class="nosotros">
-            <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque id inventore labore nesciunt esse impedit
-                maiores nisi deleniti quasi distinctio! Aliquid iure neque fugit aliquam, excepturi explicabo libero
-                molestias assumenda?</p>
-
-            <a href="html/nosotros.html" class="boton">Ver más</a>
-
-        </div>
-
-        <div id="contacto">
-            <h2>Contacto</h2>
-            <p>Nos interesa saber tu opinión</p>
-            <p>Dejanos tu comentario</p>
-        </div>
-
-        <div class="formulario">
-
-            <form class="row" action="">
-
-                <div class="mb-3 col-lg-7">
-                    <label for="full-name" class="form-label">Nombre y apellido</label>
-                    <input type="text" class="form-control" id="full-name" placeholder="Nombre y apellido">
-                </div>
-
-                <div class="mb-3 col-lg-7">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="ejemplo@gmail.com">
-                </div>
-                <div class="mb-3 col-lg-7">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Dejá tu comentario"></textarea>
-                </div>
-
-                <div class="col-6">
-                    <button type="submit" class="btn">Enviar</button>
-                    <button type="reset" class="btn">Cancelar</button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-
-        <!--     FOOTER     -->
-        <footer class="footer">
-            <p>Seguinos en nuestras redes</p>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram.png" alt="Link a instagram">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.png" alt="Link a facebook">
-            </a>
-        </footer>
 
     </div>
+
+    <!--     FOOTER     -->
+    <footer class="footer">
+        <p>Seguinos en nuestras redes</p>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.png" alt="Link a instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="Link a facebook">
+        </a>
+    </footer>
 
 
     <!-- Bootstrap -->

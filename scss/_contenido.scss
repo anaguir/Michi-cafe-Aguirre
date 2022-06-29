@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+label,
+::placeholder {
+    font-size: $size5;
+}
+
+h1 {
+    font-size: $size1;
+    font-weight: $weight1;
+}
+
+h2 {
+    font-size: $size2;
+    font-weight: $weight2;
+}
+
+h3 {
+    font-size: $size3;
+    font-weight: $weight2;
+}
+
+p {
+    font-size: $size4;
+    font-weight: $weight4;
+}
+
+.btn {
+    background-color: $color3;
+    color: $color2;
+    &:hover {
+        background-color: $color1;
+        color: $color2;
+        border-style: none;
+    }
+}
+
+/* --nav-- */
+.nav-link {
+    color: $color2;
+    margin: 0 5px;
+    &:hover {
+        color: $color3;
+    }
+}
+
+/* --portada-- */
+.portada {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color2;
+    p span {
+        background-color: $color1;
+        color: $color2;
+        padding: 0 1em;
+    }
+}
+
+/* --footer-- */
+.footer {
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: $color2;
+        margin: 0.5rem 0.1rem;
+        &:hover {
+            color: $color4;
+        }
+    }
+    img {
+        margin: 0.5rem 0.2rem;
+        &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+    }
+}
+
+/* --index y nosotros-- */
+.portadaIndex {
+    background-image: url(../images/index.png);
+}
+
+.portadaNosotros {
+    background-image: url(../images/nosotros.jpg);
+}
+
+.boton {
+    width: 5.5rem;
+    padding: 0.2rem;
+    color: $color2;
+    background-color: $color3;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3rem;
+    display: inline-block;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+        background-color: $color1;
+        color: $color2;
+    }
+}
+
+#contacto {
+    padding: 2em 1.5em 0 1.5em;
+}
+
+.formulario {
+    padding: 0 1.5em 2em 1.5em;
+}
+
+.fondo {
+    background-color: $color5;
+}
+
+.imagenNosotros {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem 0 2rem;
+    img {
+        width: 80%;
+    }
+}
+
+.nosotros, .conocenos {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+/* --menu-- */
+.portadaMenu {
+    background-image: url(../images/menu.jpg);
+}
+
+.textMenu {
+    margin-top: 2em;
+}
+
+.dulce, .salado, .cafeteria, .bebidas {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.ancho {
+    width: 80%;
+}
+
+/* --sucursales-- */
+.portadaSucursales {
+    background-image: url(../images/sucursales.jpg);
+}
+
+.cardSucursal {
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.card {
+    width: 23rem;
+    margin: 3rem;
+    padding: 0;
+}
+
+/* --reserva-- */
+.portadaReserva {
+    background-image: url(../images/reserva.png);
+}
+
+.reserva {
+    padding: 2em 1.5em 0 1.5em;
+}
+
+.formReserva {
+    padding: 0 1.5em 2em 1.5em;
+}

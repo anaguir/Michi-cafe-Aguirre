@@ -1,0 +1,64 @@
+/* --media queries-- */
+@media screen and (min-width: 576) {
+
+    /* --index y nosotros html-- */
+    .imagenNosotros img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /* --index y nosotros html-- */
+    #contacto {
+        text-align: center;
+    }
+
+    .imagenNosotros img {
+        width: 50%;
+    }
+   
+    /* --reserva html-- */
+    .reserva {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* --index y nosotros html-- */
+    .nosotros {
+        justify-content: center;
+    }
+
+    #contacto {
+        text-align: center;
+        padding-top: 4em;
+    }
+
+    .formulario {
+        padding-top: 2em;
+    }
+
+    .imagenNosotros img {
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+    /* --menu html-- */
+    .ancho {
+        width: 85%;
+        padding: 0;
+    }
+
+    /* --reserva html-- */
+     .reserva {
+        text-align: start;
+        align-items: flex-start;
+        padding-top: 4em;
+    }
+
+    .formReserva {
+        padding-top: 2em;
+    }
+}
