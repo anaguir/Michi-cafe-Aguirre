@@ -40,11 +40,13 @@
         padding-top: 2em;
     }
 
-    .imagenNosotros img {
-        width: 70%;
+    .imagenNosotros {
         padding-bottom: 2em;
+        img {
+            width: 70%;
+        }
     }
-
+    
     /* --menu html-- */
     .ancho {
         width: 85%;

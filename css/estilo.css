@@ -26,20 +26,19 @@ p {
   font-size: 1.1rem;
   font-weight: 300; }
 
-.btn {
-  background-color: rgba(255, 166, 0, 0.801);
+.btn, .boton {
+  background-color: #ffa600cc;
   color: white; }
-  .btn:hover {
+  .btn:hover, .boton:hover {
     background-color: black;
-    color: white;
-    border-style: none; }
+    color: white; }
 
 /* --nav-- */
 .nav-link {
   color: white;
   margin: 0 5px; }
   .nav-link:hover {
-    color: rgba(255, 166, 0, 0.801); }
+    color: #ffa600cc; }
 
 /* --portada-- */
 .portada {
@@ -63,7 +62,7 @@ p {
     color: white;
     margin: 0.5rem 0.1rem; }
     .footer p:hover {
-      color: gray; }
+      color: #808080; }
   .footer img {
     margin: 0.5rem 0.2rem; }
     .footer img:hover {
@@ -80,8 +79,6 @@ p {
 .boton {
   width: 5.5rem;
   padding: 0.2rem;
-  color: white;
-  background-color: rgba(255, 166, 0, 0.801);
   text-decoration: none;
   text-align: center;
   border-radius: 0.3rem;
@@ -90,9 +87,6 @@ p {
   top: 5%;
   left: 50%;
   transform: translateX(-50%); }
-  .boton:hover {
-    background-color: black;
-    color: white; }
 
 #contacto {
   padding: 2em 1.5em 0 1.5em; }
@@ -101,7 +95,7 @@ p {
   padding: 0 1.5em 2em 1.5em; }
 
 .fondo {
-  background-color: bisque; }
+  background-color: #ffe4c4; }
 
 .imagenNosotros {
   display: flex;
@@ -179,9 +173,10 @@ p {
     padding-top: 4em; }
   .formulario {
     padding-top: 2em; }
-  .imagenNosotros img {
-    width: 70%;
+  .imagenNosotros {
     padding-bottom: 2em; }
+    .imagenNosotros img {
+      width: 70%; }
   /* --menu html-- */
   .ancho {
     width: 85%;

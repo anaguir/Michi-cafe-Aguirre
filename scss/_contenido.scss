@@ -1,94 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-label,
-::placeholder {
-    font-size: $size5;
-}
-
-h1 {
-    font-size: $size1;
-    font-weight: $weight1;
-}
-
-h2 {
-    font-size: $size2;
-    font-weight: $weight2;
-}
-
-h3 {
-    font-size: $size3;
-    font-weight: $weight2;
-}
-
-p {
-    font-size: $size4;
-    font-weight: $weight4;
-}
-
-.btn {
-    background-color: $color3;
-    color: $color2;
-    &:hover {
-        background-color: $color1;
-        color: $color2;
-        border-style: none;
-    }
-}
-
-/* --nav-- */
-.nav-link {
-    color: $color2;
-    margin: 0 5px;
-    &:hover {
-        color: $color3;
-    }
-}
-
-/* --portada-- */
-.portada {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $color2;
-    p span {
-        background-color: $color1;
-        color: $color2;
-        padding: 0 1em;
-    }
-}
-
-/* --footer-- */
-.footer {
-    background-color: $color1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-        color: $color2;
-        margin: 0.5rem 0.1rem;
-        &:hover {
-            color: $color4;
-        }
-    }
-    img {
-        margin: 0.5rem 0.2rem;
-        &:hover {
-            transform: scale(1.2);
-            transition: 1s;
-        }
-    }
-}
-
 /* --index y nosotros-- */
 .portadaIndex {
     background-image: url(../images/index.png);
@@ -99,10 +8,9 @@ p {
 }
 
 .boton {
+    @extend .btn;
     width: 5.5rem;
     padding: 0.2rem;
-    color: $color2;
-    background-color: $color3;
     text-decoration: none;
     text-align: center;
     border-radius: 0.3rem;
@@ -111,10 +19,6 @@ p {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    &:hover {
-        background-color: $color1;
-        color: $color2;
-    }
 }
 
 #contacto {
@@ -126,7 +30,7 @@ p {
 }
 
 .fondo {
-    background-color: $color5;
+    background-color: map-get($colores, $color5);
 }
 
 .imagenNosotros {
