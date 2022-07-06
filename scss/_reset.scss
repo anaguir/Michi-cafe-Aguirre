@@ -31,10 +31,10 @@ p {
 }
 
 .btn {
-    background-color: map-get($colores, $color3);
-    color: map-get($colores, $color2);
+    background-color: map-get($paleta, 'tres');
+    color: map-get($paleta, 'dos');
     &:hover {
-        background-color: map-get($colores, $color1);
-        color: map-get($colores, $color2);
+        background-color: map-get($paleta, 'uno');
+        color: map-get($paleta, 'dos');
     }
 }

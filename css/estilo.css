@@ -28,14 +28,14 @@ p {
 
 .btn, .boton {
   background-color: #ffa600cc;
-  color: white; }
+  color: #ffffff; }
   .btn:hover, .boton:hover {
-    background-color: black;
-    color: white; }
+    background-color: #000000;
+    color: #ffffff; }
 
 /* --nav-- */
 .nav-link {
-  color: white;
+  color: #ffffff;
   margin: 0 5px; }
   .nav-link:hover {
     color: #ffa600cc; }
@@ -46,20 +46,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white; }
+  color: #ffffff; }
   .portada p span {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     padding: 0 1em; }
 
 /* --footer-- */
 .footer {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center; }
   .footer p {
-    color: white;
+    color: #ffffff;
     margin: 0.5rem 0.1rem; }
     .footer p:hover {
       color: #808080; }
@@ -71,10 +71,10 @@ p {
 
 /* --index y nosotros-- */
 .portadaIndex {
-  background-image: url(../images/index.png); }
+  background-image: url(../images/index.webp); }
 
 .portadaNosotros {
-  background-image: url(../images/nosotros.jpg); }
+  background-image: url(../images/nosotros.webp); }
 
 .boton {
   width: 5.5rem;
@@ -112,7 +112,7 @@ p {
 
 /* --menu-- */
 .portadaMenu {
-  background-image: url(../images/menu.jpg); }
+  background-image: url(../images/menu.webp); }
 
 .textMenu {
   margin-top: 2em; }
@@ -127,7 +127,7 @@ p {
 
 /* --sucursales-- */
 .portadaSucursales {
-  background-image: url(../images/sucursales.jpg); }
+  background-image: url(../images/sucursales.webp); }
 
 .cardSucursal {
   justify-content: space-around;
@@ -140,7 +140,7 @@ p {
 
 /* --reserva-- */
 .portadaReserva {
-  background-image: url(../images/reserva.png); }
+  background-image: url(../images/reserva.webp); }
 
 .reserva {
   padding: 2em 1.5em 0 1.5em; }

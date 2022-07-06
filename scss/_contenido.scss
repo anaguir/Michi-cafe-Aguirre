@@ -1,10 +1,10 @@
 /* --index y nosotros-- */
 .portadaIndex {
-    background-image: url(../images/index.png);
+    background-image: url(../images/index.webp);
 }
 
 .portadaNosotros {
-    background-image: url(../images/nosotros.jpg);
+    background-image: url(../images/nosotros.webp);
 }
 
 .boton {
@@ -30,7 +30,7 @@
 }
 
 .fondo {
-    background-color: map-get($colores, $color5);
+    background-color: map-get($paleta, 'cinco');
 }
 
 .imagenNosotros {
@@ -51,7 +51,7 @@
 
 /* --menu-- */
 .portadaMenu {
-    background-image: url(../images/menu.jpg);
+    background-image: url(../images/menu.webp);
 }
 
 .textMenu {
@@ -70,7 +70,7 @@
 
 /* --sucursales-- */
 .portadaSucursales {
-    background-image: url(../images/sucursales.jpg);
+    background-image: url(../images/sucursales.webp);
 }
 
 .cardSucursal {
@@ -86,7 +86,7 @@
 
 /* --reserva-- */
 .portadaReserva {
-    background-image: url(../images/reserva.png);
+    background-image: url(../images/reserva.webp);
 }
 
 .reserva {

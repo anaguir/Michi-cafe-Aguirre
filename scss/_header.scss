@@ -1,9 +1,9 @@
 /* --nav-- */
 .nav-link {
-    color: map-get($colores, $color2);
+    color: map-get($paleta, 'dos');
     margin: 0 5px;
     &:hover {
-        color: map-get($colores, $color3);
+        color: map-get($paleta, 'tres');
     }
 }
 
@@ -13,10 +13,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: map-get($colores, $color2);
+    color: map-get($paleta, 'dos');
     p span {
-        background-color: map-get($colores, $color1);
-        color: map-get($colores, $color2);
+        background-color: map-get($paleta, 'uno');
+        color: map-get($paleta, 'dos');
         padding: 0 1em;
     }
 }
