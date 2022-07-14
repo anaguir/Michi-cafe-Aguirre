@@ -1,5 +1,19 @@
 /* --media queries-- */
-@media screen and (min-width: 576) {
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: $size6;
+    }
+
+    .oculto {
+        visibility: hidden;
+    }
+
+    .footer p {
+        font-size: $size5;
+    }
+}
+
+@media screen and (min-width: 576px) {
 
     /* --index y nosotros html-- */
     .imagenNosotros img {

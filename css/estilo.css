@@ -149,7 +149,15 @@ p {
   padding: 0 1.5em 2em 1.5em; }
 
 /* --media queries-- */
-@media screen and (min-width: 576) {
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2rem; }
+  .oculto {
+    visibility: hidden; }
+  .footer p {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 576px) {
   /* --index y nosotros html-- */
   .imagenNosotros img {
     width: 40%; } }

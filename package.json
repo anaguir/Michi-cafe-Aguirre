@@ -1,12 +1,12 @@
 {
   "name": "proyecto-coder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cafetería temática / Proyecto final del curso de desarrollo web de Coderhouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/estilo.css",
-		"watch-css": "nodemon -e scss -x \"npm  run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm  run build-css\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   "homepage": "https://github.com/anaguir/Michi-cafe-Aguirre#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   }
 }
